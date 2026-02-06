@@ -1,6 +1,8 @@
 # About this repository
 This repository collects papers on security for Vision-Language-Action (VLA) models. Papers are grouped by attack type, with links to PDFs for quick access.
 
+> If you’re interested in VLA security, feel free to email xwzhang1998@gmail.com to connect and explore potential collaborations.
+
 ![Attack categories](category.png)
 
 ## Overview and Contents
