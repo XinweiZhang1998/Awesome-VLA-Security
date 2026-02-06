@@ -7,7 +7,8 @@ This repository collects papers on security, adversarial robustness, and attacks
 3. [Adversarial Attacks](#adversarial-attacks)
 4. [Action Manipulation](#action-manipulation)
 5. [Robustness/Sensor Attacks](#robustnesssensor-attacks)
-6. [Benchmarks](#benchmarks)
+6. [Defense](#defense)
+7. [Benchmarks](#benchmarks)
 
 ## Backdoor/Poisoning
 | Title | Year | Venue/Type | PDF |
@@ -27,7 +28,6 @@ This repository collects papers on security, adversarial robustness, and attacks
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
 | ANNIE: Be Careful of Your Robots | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2509.03383.pdf) |
-| Model-Agnostic Adversarial Attack and Defense for Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2510.13237.pdf) |
 | Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics | 2025 | ICCV | [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Exploring_the_Adversarial_Vulnerabilities_of_Vision-Language-Action_Models_in_Robotics_ICCV_2025_paper.pdf) |
 | When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2511.16203.pdf) |
 
@@ -42,6 +42,13 @@ This repository collects papers on security, adversarial robustness, and attacks
 | Eva-VLA: Evaluating Vision-Language-Action Models' Robustness Under Real-World Physical Variations | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2509.18953.pdf) |
 | Phantom Menace: Exploring and Enhancing the Robustness of VLA Models Against Physical Sensor Attacks | 2025 | arXiv preprint (AAAI 2026) | [PDF](https://arxiv.org/pdf/2511.10008.pdf) |
 | Exploring the Robustness of Vision-Language-Action Models against Sensor Attacks | 2025 | LAMPS '25 (workshop) | [PDF](https://www.zjushine.top/lamps-vla-robustness.github.io/static/pdfs/LAMPS2025_VLA_Robustness.pdf) |
+
+## Defense
+| Title | Year | Venue/Type | PDF |
+| --- | --- | --- | --- |
+| Model-Agnostic Adversarial Attack and Defense for Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2510.13237.pdf) |
+| Double Visual Defense: Adversarial Pre-training and Instruction Tuning for Improving Vision-Language Model Robustness | 2025 | arXiv preprint (VLM robustness) | [PDF](https://arxiv.org/pdf/2501.09446.pdf) |
+| Attack as Defense: Safeguarding Large Vision-Language Models from Jailbreaking by Adversarial Attacks | 2025 | EMNLP Findings (VLM defense) | [PDF](https://aclanthology.org/2025.findings-emnlp.1095.pdf) |
 
 ## Benchmarks
 | Title | Year | Venue/Type | PDF |
