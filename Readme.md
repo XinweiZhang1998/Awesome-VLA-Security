@@ -7,10 +7,9 @@ This repository collects papers on security for Vision-Language-Action (VLA) mod
 1. [Backdoor/Poisoning](#backdoorpoisoning) — Hidden triggers or poisoned data cause targeted misbehavior under specific conditions.
 2. [Patch Attacks](#patch-attacks) — Physical or digital patches steer perception and downstream actions.
 3. [Adversarial Attacks](#adversarial-attacks) — Crafted inputs or prompts induce failures without changing model weights.
-4. [Action Manipulation](#action-manipulation) — Attacks disrupt action outputs (e.g., freezing or drifting actions).
-5. [Robustness/Sensor Attacks](#robustnesssensor-attacks) — Physical or sensor-level variations stress the perception-action pipeline.
-6. [Defense](#defense) — Methods that improve robustness through training, filtering, or detection.
-7. [Benchmarks](#benchmarks) — Datasets and evaluation suites for VLA security and robustness.
+4. [Robustness/Sensor Attacks](#robustnesssensor-attacks) — Physical or sensor-level variations stress the perception-action pipeline.
+5. [Defense](#defense) — Methods that improve robustness through training, filtering, or detection.
+6. [Benchmarks](#benchmarks) — Datasets and evaluation suites for VLA security and robustness.
 
 ## Backdoor/Poisoning
 | Title | Year | Venue/Type | PDF |
@@ -30,13 +29,9 @@ This repository collects papers on security for Vision-Language-Action (VLA) mod
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
 | ANNIE: Be Careful of Your Robots | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2509.03383.pdf) |
+| FreezeVLA: Action-Freezing Attacks against Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2509.19870.pdf) |
 | Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics | 2025 | ICCV | [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Exploring_the_Adversarial_Vulnerabilities_of_Vision-Language-Action_Models_in_Robotics_ICCV_2025_paper.pdf) |
 | When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2511.16203.pdf) |
-
-## Action Manipulation
-| Title | Year | Venue/Type | PDF |
-| --- | --- | --- | --- |
-| FreezeVLA: Action-Freezing Attacks against Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2509.19870.pdf) |
 
 ## Robustness/Sensor Attacks
 | Title | Year | Venue/Type | PDF |
