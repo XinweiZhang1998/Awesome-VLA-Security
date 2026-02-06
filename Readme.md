@@ -1,14 +1,29 @@
 # About this repository
 This repository collects papers on security, adversarial robustness, and attacks for Vision-Language-Action (VLA) models. Papers are grouped by attack type, with links to PDFs for quick access.
 
+![Attack categories](category.png)
+
+## Attack Overview
+Backdoor/Poisoning: Adversaries implant hidden triggers or manipulate training data so the model behaves normally except when a trigger appears, causing targeted misbehavior.
+
+Patch Attacks: Visual patches or stickers are placed in the scene to reliably steer the model’s perception and downstream actions.
+
+Adversarial Attacks: Crafted perturbations in inputs or prompts induce failures or unsafe behavior without changing the model’s weights.
+
+Action Manipulation: Attacks directly disrupt the action outputs (e.g., freezing or drifting actions) to degrade control and task completion.
+
+Robustness/Sensor Attacks: Physical or sensor-level variations (lighting, viewpoint, noise, sensor corruption) stress the model’s perception-action pipeline.
+
+Defense: Methods that improve robustness through training, filtering, or detection to reduce attack success.
+
 ## Table of Contents
 1. [Backdoor/Poisoning](#backdoorpoisoning)
 2. [Patch Attacks](#patch-attacks)
 3. [Adversarial Attacks](#adversarial-attacks)
 4. [Action Manipulation](#action-manipulation)
 5. [Robustness/Sensor Attacks](#robustnesssensor-attacks)
-6. [Defense](#defense)
-7. [Benchmarks](#benchmarks)
+6. [Benchmarks](#benchmarks)
+7. [Defense](#defense)
 
 ## Backdoor/Poisoning
 | Title | Year | Venue/Type | PDF |
@@ -43,14 +58,16 @@ This repository collects papers on security, adversarial robustness, and attacks
 | Phantom Menace: Exploring and Enhancing the Robustness of VLA Models Against Physical Sensor Attacks | 2025 | arXiv preprint (AAAI 2026) | [PDF](https://arxiv.org/pdf/2511.10008.pdf) |
 | Exploring the Robustness of Vision-Language-Action Models against Sensor Attacks | 2025 | LAMPS '25 (workshop) | [PDF](https://www.zjushine.top/lamps-vla-robustness.github.io/static/pdfs/LAMPS2025_VLA_Robustness.pdf) |
 
+
+## Benchmarks
+| Title | Year | Venue/Type | PDF |
+| --- | --- | --- | --- |
+| AttackVLA: Benchmarking Adversarial and Backdoor Attacks on Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2511.12149.pdf) |
+
+
 ## Defense
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
 | Model-Agnostic Adversarial Attack and Defense for Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2510.13237.pdf) |
 | Double Visual Defense: Adversarial Pre-training and Instruction Tuning for Improving Vision-Language Model Robustness | 2025 | arXiv preprint (VLM robustness) | [PDF](https://arxiv.org/pdf/2501.09446.pdf) |
 | Attack as Defense: Safeguarding Large Vision-Language Models from Jailbreaking by Adversarial Attacks | 2025 | EMNLP Findings (VLM defense) | [PDF](https://aclanthology.org/2025.findings-emnlp.1095.pdf) |
-
-## Benchmarks
-| Title | Year | Venue/Type | PDF |
-| --- | --- | --- | --- |
-| AttackVLA: Benchmarking Adversarial and Backdoor Attacks on Vision-Language-Action Models | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2511.12149.pdf) |
