@@ -1,5 +1,5 @@
 # About this repository
-This repository collects papers on security, adversarial robustness, and attacks for Vision-Language-Action (VLA) models. Papers are grouped by attack type, with links to PDFs for quick access.
+This repository collects papers on security for Vision-Language-Action (VLA) models. Papers are grouped by attack type, with links to PDFs for quick access.
 
 ![Attack categories](category.png)
 
