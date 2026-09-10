@@ -20,8 +20,8 @@ This repository collects papers on security and safety for Vision-Language-Actio
 8. [Robustness/Sensor Attacks](#robustnesssensor-attacks)
 9. [Benchmarks](#benchmarks)
 10. [Defenses](#defenses)
-11. [World Action Models and World Models](#world-action-models-and-world-models): [attacks](#wam-attacks-and-security-evaluation), [safety](#world-model-safety-and-risk-analysis), [surveys and models](#wam-surveys-and-representative-models)
-12. [Embodied-Agent Security and Safety](#embodied-agent-security-and-safety): [jailbreaks](#embodied-jailbreaks), [benchmarks](#embodied-safety-benchmarks)
+11. [World Action Models and World Models](#world-action-models-and-world-models): [attacks](#wam-attacks-and-security-evaluation), [safety](#world-model-safety-and-risk-analysis), [robustness](#wam-robustness-under-distribution-shift), [surveys and models](#wam-surveys-and-representative-models)
+12. [Embodied-Agent Security and Safety](#embodied-agent-security-and-safety): [jailbreaks](#embodied-jailbreaks), [benchmarks](#embodied-safety-benchmarks), [defenses](#embodied-safety-defenses)
 13. [VLM](#vlm)
 
 For arXiv-linked papers, **Year** records the first arXiv submission year; the venue column can refer to a later publication.
@@ -30,8 +30,12 @@ Venue labels marked **\*** are acceptance statements in the authors' arXiv metad
 
 ## Surveys
 
+World-model-specific surveys are listed under [world-model safety and risk analysis](#world-model-safety-and-risk-analysis) and [WAM surveys](#wam-surveys-and-representative-models).
+
 | Title | Year | Venue/Type | PDF / Paper |
 | --- | --- | --- | --- |
+| Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses | 2026 | arXiv survey; broader embodied AI | [PDF](https://arxiv.org/pdf/2605.02900) |
+| Attacks on Vision-Language-Action Robotic Systems: Mechanisms, Evaluation, and OpenProblems | 2026 | SSRN survey; VLA attacks | [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152640) |
 | Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms | 2026 | arXiv survey; VLA safety | [PDF](https://arxiv.org/pdf/2604.23775) |
 | Safety of Vision-Language-Action Models: A Survey from Lifecycle Perspectives | 2026 | Authorea preprint; VLA safety | [Paper](https://www.authorea.com/doi/full/10.22541/au.177524426.60806944/v1) |
 | SoK: Security and Privacy of Foundation-Model-Powered Robots | 2026 | arXiv SoK; broader embodied AI | [PDF](https://arxiv.org/pdf/2606.16788) |
@@ -61,6 +65,7 @@ See also [TRAP and reasoning attacks](#reasoning-and-instruction-attacks) and [W
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models | 2026 | arXiv preprint; DURA | [PDF](https://arxiv.org/pdf/2608.10393) |
 | Partially Observable Adversarial Patch Attacks on Vision-Language-Action Models in Robotics | 2026 | IEEE Robotics and Automation Letters 2026* | [PDF](https://arxiv.org/pdf/2606.03556) |
 | UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2608.13453) |
 | VLA-Hijack: A Transferable Patch Attack against Vision-Language-Action Models via Visual Proprioception Hijacking | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2605.28083) |
@@ -110,6 +115,7 @@ Attacks and robustness studies on intermediate reasoning, language grounding, an
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| Manipulation Facing Threats: Evaluating Physical Vulnerabilities in End-to-End Vision Language Action Models | 2024 | arXiv preprint; PVEP | [PDF](https://arxiv.org/pdf/2409.13174) |
 | How VLAs (Really) Work In Open-World Environments | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2604.21192) |
 | ICR-Drive: Instruction Counterfactual Robustness for End-to-End Language-Driven Autonomous Driving | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2604.05378) |
 | Bring the Apple, Not the Sofa: Impact of Irrelevant Context in Embodied AI Commands on VLA Models | 2026 | EACL 2026 Student Research Workshop | [PDF](https://aclanthology.org/2026.eacl-srw.63.pdf) |
@@ -123,6 +129,7 @@ Attacks and robustness studies on intermediate reasoning, language grounding, an
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| VLA-Risk: Benchmarking Vision-Language-Action Models with Physical Robustness | 2025 | OpenReview manuscript; acceptance not verified | [PDF](https://openreview.net/pdf?id=31EjDFwFEe) |
 | ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2606.27079) |
 | LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic Safety in Vision-Language-Action Models | 2026 | ECCV 2026* | [PDF](https://arxiv.org/pdf/2606.23686) |
 | HazardArena: Evaluating Semantic Safety in Vision-Language-Action Models | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2604.12447) |
@@ -136,6 +143,15 @@ Attacks and robustness studies on intermediate reasoning, language grounding, an
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Models | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2608.20791) |
+| TrustVLA: Mechanism-Guided Inference-Time Defense Against Vision-Language-Action Backdoors | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2607.12571) |
+| Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation | 2026 | arXiv preprint; TOWN-VLA prompt robustness | [PDF](https://arxiv.org/pdf/2608.23224) |
+| SafeAlign-VLA: A Negative-Enhanced Safe Alignment Framework for Risk-Aware Autonomous Driving | 2026 | arXiv preprint; driving safety alignment | [PDF](https://arxiv.org/pdf/2605.19524) |
+| STRONG-VLA: Decoupled Robustness Learning for Vision-Language-Action Models under Multimodal Perturbations | 2026 | arXiv preprint; multimodal robustness | [PDF](https://arxiv.org/pdf/2604.10055) |
+| CoFreeVLA: Short-Horizon Collision-Free Dual-Arm Manipulation via Vision-Language-Action Model and Risk Estimation | 2026 | arXiv preprint; self-collision risk filtering | [PDF](https://arxiv.org/pdf/2601.21712) |
+| Towards Safe Robot Foundation Models Using Inductive Biases | 2025 | arXiv preprint; robot-foundation-model safety layer | [PDF](https://arxiv.org/pdf/2505.10219) |
+| Stable Language Guidance for Vision–Language–Action Models | 2026 | ACL 2026; RSS | [PDF](https://aclanthology.org/2026.acl-long.190.pdf) |
+| Restoring the Right Stream: Training-Free OOD Robustness for Vision–Language–Action Policies | 2026 | Entropy; G-PSMR | [Paper](https://www.mdpi.com/1099-4300/28/9/975) |
 | VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks | 2026 | Ad Hoc & Sensor Wireless Networks* | [PDF](https://arxiv.org/pdf/2608.01028) |
 | VLA-Forget: Vision-Language-Action Unlearning for Embodied Foundation Models | 2026 | ACL 2026 KnowFM workshop* | [PDF](https://arxiv.org/pdf/2604.03956) |
 | Causal Scene Narration with Runtime Safety Supervision for Vision-Language-Action Driving | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2604.01723) |
@@ -157,12 +173,14 @@ Attacks and robustness studies on intermediate reasoning, language grounding, an
 
 ## World Action Models and World Models
 
-This section covers predictive models used for action generation, planning, or robot training. **WAM-specific** work studies models that couple predicted futures to actions; **world-model** work also includes Dreamer-style agents and learned simulators in robot-learning pipelines. Results for these systems should be interpreted within their respective threat models and evaluation settings.
+This section covers predictive models used for action generation, planning, or robot training, with explicitly labeled adjacent work on text-based world models. **WAM-specific** work studies models that couple predicted futures to actions; **world-model** work also includes Dreamer-style agents and learned simulators in robot-learning pipelines. Results for these systems should be interpreted within their respective threat models and evaluation settings.
 
 ### WAM Attacks and Security Evaluation
 
 | Title | Year | Venue/Type | Scope / Focus | PDF |
 | --- | --- | --- | --- | --- |
+| When World Models Dream Wrong: Physical-Conditioned Adversarial Attacks against World Models | 2026 | arXiv preprint | PhysCond-WMA; driving world-model conditioning attacks; downstream detection and open-loop planning | [PDF](https://arxiv.org/pdf/2602.18739) |
+| False Prophets: On the Security of World Models in Agentic Systems | 2026 | arXiv preprint | Adjacent text-based world models in terminal agents; security benchmark, not robot-control evaluation | [PDF](https://arxiv.org/pdf/2607.23147) |
 | BadWAM: When World-Action Models Dream Right but Act Wrong | 2026 | arXiv preprint | WAM; adversarial world-action drift and imagination-preserving attacks | [PDF](https://arxiv.org/pdf/2607.15207) |
 | Attacking the Trusted Imagination: Oracle-Level Integrity Attacks on Imagine-then-Act World Models | 2026 | arXiv preprint | WAM; integrity of predicted futures consumed by planners and safety checks | [PDF](https://arxiv.org/pdf/2606.22966) |
 | ARB4WM: An Adversarial Robustness Benchmark for World Models in Continuous Control | 2026 | arXiv preprint | World models; adversarial benchmark for Dreamer-style control agents | [PDF](https://arxiv.org/pdf/2606.16605) |
@@ -175,9 +193,20 @@ Safe planning methods and risk analyses for learned world models. Safe-RL result
 
 | Title | Year | Venue/Type | Scope / Focus | PDF |
 | --- | --- | --- | --- | --- |
+| Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation | 2026 | arXiv survey | Lifecycle threats, defenses, and evaluation for world-model-based embodied AI | [PDF](https://arxiv.org/pdf/2607.28226) |
+| VLM-SAFE: Vision-Language Model-Guided Safety-Aware Reinforcement Learning with World Models for Autonomous Driving | 2025 | arXiv preprint | VLM-SAFE; semantic safety guidance for world-model-based offline driving RL | [PDF](https://arxiv.org/pdf/2505.16377) |
+| PIGDreamer: Privileged Information Guided World Models for Safe Partially Observable Reinforcement Learning | 2025 | ICML 2025 | Privileged-information-guided world models for safe partially observable RL | [PDF](https://raw.githubusercontent.com/mlresearch/v267/main/assets/huang25ai/huang25ai.pdf) |
 | Safety, Security, and Cognitive Risks in World Models | 2026 | arXiv preprint | Risk survey and proof-of-concept attacks on RSSM/Dreamer models | [PDF](https://arxiv.org/pdf/2604.01346) |
 | Nightmare Dreamer: Dreaming About Unsafe States And Planning Ahead | 2026 | arXiv preprint | Safe model-based RL; anticipating unsafe states | [PDF](https://arxiv.org/pdf/2601.04686) |
 | SafeDreamer: Safe Reinforcement Learning with World Models | 2023 | ICLR 2024* | Safe model-based RL; safety-constrained world-model planning | [PDF](https://arxiv.org/pdf/2307.07176) |
+
+### WAM Robustness under Distribution Shift
+
+Robustness to distribution shifts is distinct from robustness to an adaptive adversary.
+
+| Title | Year | Venue/Type | Scope / Focus | PDF |
+| --- | --- | --- | --- | --- |
+| ST-WAM: Semantic-Temporal World Action Model for Robust Manipulation under Visual Distribution Shifts | 2026 | arXiv preprint | ST-WAM; visual-shift hallucination diagnosis and robust manipulation | [PDF](https://arxiv.org/pdf/2607.28993) |
 
 ### WAM Surveys and Representative Models
 
@@ -200,6 +229,7 @@ Related LLM/VLM-based robot and embodied-agent work. These entries cover planner
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots | 2026 | arXiv preprint; physical visual prompt injection | [PDF](https://arxiv.org/pdf/2608.05715) |
 | The Shawshank Redemption of Embodied AI: Understanding and Benchmarking Indirect Environmental Jailbreaks | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2511.16347) |
 | Jailbreaking LLM-Controlled Robots | 2024 | arXiv preprint | [PDF](https://arxiv.org/pdf/2410.13691) |
 | BadRobot: Jailbreaking Embodied LLM Agents in the Physical World | 2024 | ICLR 2025* | [PDF](https://arxiv.org/pdf/2407.20242) |
@@ -208,10 +238,23 @@ Related LLM/VLM-based robot and embodied-agent work. These entries cover planner
 
 | Title | Year | Venue/Type | PDF |
 | --- | --- | --- | --- |
+| SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2607.14543) |
+| HomeSafe-Bench: Evaluating Vision-Language Models on Unsafe Action Detection for Embodied Agents in Household Scenarios | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2603.11975) |
+| SafeMind: Benchmarking and Mitigating Safety Risks in Embodied LLM Agents | 2025 | arXiv preprint; benchmark and safety agent | [PDF](https://arxiv.org/pdf/2509.25885) |
 | RoboJailBench: Benchmarking Adversarial Attacks and Defenses in Embodied Robotic Agents | 2026 | arXiv preprint | [PDF](https://arxiv.org/pdf/2605.19328) |
 | AGENTSAFE: Benchmarking the Safety of Embodied Agents on Hazardous Instructions | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2506.14697) |
 | Generating Robot Constitutions & Benchmarks for Semantic Safety | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2503.08663) |
 | SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents | 2024 | arXiv preprint | [PDF](https://arxiv.org/pdf/2412.13178) |
+
+### Embodied Safety Defenses
+
+| Title | Year | Venue/Type | PDF |
+| --- | --- | --- | --- |
+| If you're waiting for a sign... that might not be it! Mitigating Trust Boundary Confusion from Visual Injections on Vision-Language Agentic Systems | 2026 | arXiv preprint; visual-injection defense | [PDF](https://arxiv.org/pdf/2604.19844) |
+| RoboSafe: Safeguarding Embodied Agents via Executable Safety Logic | 2025 | ICLR 2026; preprint PDF | [PDF](https://arxiv.org/pdf/2512.21220) |
+| From Words to Safety: Language-Conditioned Safety Filtering for Robot Navigation | 2025 | arXiv preprint; navigation safety filtering | [PDF](https://arxiv.org/pdf/2511.05889) |
+| CEE: An Inference-Time Jailbreak Defense for Embodied Intelligence via Subspace Concept Rotation | 2025 | arXiv preprint | [PDF](https://arxiv.org/pdf/2504.13201) |
+| Safety Guardrails for LLM-Enabled Robots | 2025 | arXiv preprint; RoboGuard | [PDF](https://arxiv.org/pdf/2503.07885) |
 
 ## VLM
 
